@@ -3,7 +3,7 @@ const path = require(path);
 const app =expree();
 
 app.use(expree.json());
-
+app.use(expree.static("public"));
 app.get("/students",(rep, res)=>{
     res.json([
         {id:1, name: "Golf"}    
